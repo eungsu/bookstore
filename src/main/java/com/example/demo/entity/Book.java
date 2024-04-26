@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import java.util.Date;
 import java.util.List;
 
 import com.example.demo.constants.BookStatus;
@@ -39,6 +40,7 @@ public class Book extends BaseDateTimeEntity {
 	private int discountPrice;
 	private double discountRate;
 	private int stock;
+	private Date pubDate;
 	@Enumerated(EnumType.STRING)
 	private BookStatus status;
 	@ManyToOne
